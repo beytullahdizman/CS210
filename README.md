@@ -3,7 +3,7 @@ My Youtube Data Analysis
 
 ### Scraping Search History
 
-I began by extracting my YouTube data to analyze my search history. Utilizing Google Cloud Service API, I obtained the API key and started inspecting the `search.html` file using BeautifulSoup. The initial steps involved printing the latest searches, including timestamps, to understand recent search activities.
+I began by extracting my YouTube data to analyze my search history. Utilizing Google Cloud Service API, I obtained the API key and started inspecting the `search-history.html` file using BeautifulSoup. The initial steps involved printing the latest searches, including timestamps, to understand recent search activities.
 ```python
 # Example code for printing recent searches with timestamps
 print(youtube_search_df.head())
@@ -11,7 +11,7 @@ print(youtube_search_df.head())
 
 ### Scraping Watch History
 
-Moving on to the `watch.html` file, I examined the latest and first videos I watched. Additionally, I created a DataFrame to store video durations for further analysis. The resulting video duration histogram provides insights into the distribution of video lengths in the watch history.
+Moving on to the `watch-history.html` file, I examined the latest and first videos I watched. Additionally, I created a DataFrame to store video durations for further analysis. The resulting video duration histogram provides insights into the distribution of video lengths in the watch history.
 ```python
 # Example code for printing latest and first watched videos, and creating a video duration histogram
 print(watched_videos_df.head())
